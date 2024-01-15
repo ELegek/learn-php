@@ -23,10 +23,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                                <a class="nav-link " aria-current="page" href="index.php">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.php">About</a>
+                                <a class="nav-link active" href="about.php">About</a>
                             </li>
                         </ul>
 
@@ -39,16 +39,9 @@
                 <div class="row">
                     <div class="col-md-8">
 
-                        <?php foreach ( $posts as $post ): ?>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="post/<?= $post['slug'] ?>"><?= $post['title'] ?></a>
-                                </h5>
-                                <p class="card-text"><?= $post['desc'] ?></p>
-                                <a href="post/<?= $post['slug'] ?>">Go somewhere</a>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
+                        <?= $post ?>
+
+
 
                     </div>
                     <div class="col-md-4">
