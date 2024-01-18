@@ -1,9 +1,5 @@
 <?php
 
-
-
-require 'functions.php';
-
 $title = 'My Blog :: Home';
 
 $posts = [
@@ -58,4 +54,4 @@ $recent_posts = [
 ];
 
 // Подключение представления сайта
-require_once 'app/views/index.tpl.php';
+require_once VIEWS . '/index.tpl.php';

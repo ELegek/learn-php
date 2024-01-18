@@ -1,7 +1,7 @@
 <?php
 
 
-require 'functions.php';
+// require 'functions.php';
 
 $title = 'My Blog :: About';
 
@@ -33,4 +33,4 @@ $recent_posts = [
 ];
 
 // Подключение представления сайта
-require_once 'app/views/about.tpl.php';
+require_once '../app/views/about.tpl.php';
