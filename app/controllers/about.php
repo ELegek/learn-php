@@ -1,8 +1,6 @@
 <?php
 
 
-// require 'functions.php';
-
 $title = 'My Blog :: About';
 
 $post = '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eius sit incidunt labore voluptatibus, deserunt a totam minus, non architecto assumenda alias quia tenetur error officiis tempora nulla vitae tempore!</p>
@@ -33,4 +31,4 @@ $recent_posts = [
 ];
 
 // Подключение представления сайта
-require_once '../app/views/about.tpl.php';
+require_once VIEWS . '/about.tpl.php';

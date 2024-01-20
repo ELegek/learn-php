@@ -10,5 +10,14 @@ define("PATH", 'http://localhost:8888/learn-php');
 
 require CORE . '/functions.php';
 
+$uri = trim(parse_url($_SERVER['REQUEST_URI'])['path'],'/');
 
-require CONTROLLERS . '/index.php';
+
+// Временный роутинг
+if ($uri === 'learn-php/index') {
+    require CONTROLLERS . '/index.php';
+} elseif ($uri == 'learn-php/about') {
+    require CONTROLLERS . '/about.php';
+} else {
+    abort();
+}
